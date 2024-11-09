@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo NexT</title><link>//localhost:4321/</link><description>Recent content on Hugo NexT</description><generator>Hugo</generator><language>ru-RU</language><lastBuildDate>Sun, 21 Jul 2024 10:28:12 +0800</lastBuildDate><atom:link href="//localhost:4321/rss.xml" rel="self" type="application/rss+xml"/><item><title>世界，你好！</title><link>//localhost:4321/demo/hello-world.html</link><pubDate>Thu, 02 Jun 2022 11:52:03 +0800</pubDate><guid>//localhost:4321/demo/hello-world.html</guid><description>&lt;p>Всем привет!&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo NexT</title><link>http://localhost:4321/</link><description>Recent content on Hugo NexT</description><generator>Hugo</generator><language>ru-RU</language><lastBuildDate>Sun, 21 Jul 2024 10:28:12 +0800</lastBuildDate><atom:link href="http://localhost:4321/rss.xml" rel="self" type="application/rss+xml"/><item><title>世界，你好！</title><link>http://localhost:4321/demo/hello-world.html</link><pubDate>Thu, 02 Jun 2022 11:52:03 +0800</pubDate><guid>http://localhost:4321/demo/hello-world.html</guid><description>&lt;p>Всем привет!&lt;/p>
 &lt;blockquote>
 &lt;p>“使用 &lt;code>weight&lt;/code> 关键字置顶文章。”&lt;/p>
 &lt;/blockquote>
@@ -8,26 +8,80 @@
  
  &lt;i class="fa fa-external-link-alt">&lt;/i>
  
-&lt;/a> 是现今世界上最快的网站建设框架，也是最流行的开源静态站点生成器之一。 凭借其惊人的速度和灵活性，Hugo 让建设网站再次变得有趣起来。&lt;/p></description></item><item><title>图像浏览工具</title><link>//localhost:4321/demo/image-viewer.html</link><pubDate>Sun, 21 Jul 2024 10:28:12 +0800</pubDate><guid>//localhost:4321/demo/image-viewer.html</guid><description>&lt;p>本主题自带图像浏览器功能，支持对文章区域内出现的图片进行浏览，点击图片可以查看大图，点击空白处可以关闭。不需要配置任何参数，只要在文章里面相应的位置添加图片信息即可 。&lt;/p></description></item><item><title>没有H1-6标题头和评论的文章</title><link>//localhost:4321/demo/no-header-title.html</link><pubDate>Thu, 06 Oct 2022 09:02:26 +0800</pubDate><guid>//localhost:4321/demo/no-header-title.html</guid><description>&lt;p>刘慈欣2018克拉克奖获奖感言（部分内容节选）。&lt;/p>
+&lt;/a> 是现今世界上最快的网站建设框架，也是最流行的开源静态站点生成器之一。 凭借其惊人的速度和灵活性，Hugo 让建设网站再次变得有趣起来。&lt;/p></description></item><item><title>图像浏览工具</title><link>http://localhost:4321/demo/image-viewer.html</link><pubDate>Sun, 21 Jul 2024 10:28:12 +0800</pubDate><guid>http://localhost:4321/demo/image-viewer.html</guid><description>&lt;p>本主题自带图像浏览器功能，支持对文章区域内出现的图片进行浏览，点击图片可以查看大图，点击空白处可以关闭。不需要配置任何参数，只要在文章里面相应的位置添加图片信息即可 。&lt;/p></description></item><item><title>Label</title><link>http://localhost:4321/post/label/</link><pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate><guid>http://localhost:4321/post/label/</guid><description>&lt;h3 id="usage">Usage
+&lt;a class="header-anchor" href="#usage">&lt;/a>
+&lt;/h3>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-jinja" data-lang="jinja">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">{%&lt;/span> &lt;span style="color:#66d9ef">label&lt;/span> &lt;span style="color:#f92672">[&lt;/span>class&lt;span style="color:#f92672">]&lt;/span>@text &lt;span style="color:#75715e">%}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;code>[class]&lt;/code> : &lt;em>Optional parameter.&lt;/em> Supported values: &lt;code>default&lt;/code> | &lt;code>primary&lt;/code> | &lt;code>success&lt;/code> | &lt;code>info&lt;/code> | &lt;code>warning&lt;/code> | &lt;code>danger&lt;/code>.
+If not specified, the default style of the browser will be used, which may be different in different browsers.&lt;/li>
+&lt;li>&lt;code>text&lt;/code> : &lt;code>@text&lt;/code> can be specified with or without space
+E.g. &lt;code>success @text&lt;/code> is the same as &lt;code>success@text&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="examples">Examples
+&lt;a class="header-anchor" href="#examples">&lt;/a>
+&lt;/h3>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-jinja" data-lang="jinja">&lt;span style="display:flex;">&lt;span>Lorem &lt;span style="color:#75715e">{%&lt;/span> &lt;span style="color:#66d9ef">label&lt;/span> @ipsum &lt;span style="color:#75715e">%}&lt;/span> &lt;span style="color:#75715e">{%&lt;/span> &lt;span style="color:#66d9ef">label&lt;/span> primary@dolor sit &lt;span style="color:#75715e">%}&lt;/span> amet, consectetur &lt;span style="color:#75715e">{%&lt;/span> &lt;span style="color:#66d9ef">label&lt;/span> success@adipiscing elit&lt;span style="color:#f92672">,&lt;/span> &lt;span style="color:#75715e">%}&lt;/span> sed &lt;span style="color:#75715e">{%&lt;/span> &lt;span style="color:#66d9ef">label&lt;/span> info@do eiusmod &lt;span style="color:#75715e">%}&lt;/span> tempor incididunt ut labore et dolore magna aliqua.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Ut enim *&lt;span style="color:#75715e">{%&lt;/span> &lt;span style="color:#66d9ef">label&lt;/span> warning @ad &lt;span style="color:#75715e">%}&lt;/span>* minim veniam, quis **&lt;span style="color:#75715e">{%&lt;/span> &lt;span style="color:#66d9ef">label&lt;/span> danger@nostrud &lt;span style="color:#75715e">%}&lt;/span>** exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Duis aute irure dolor in reprehenderit in voluptate ~~&lt;span style="color:#75715e">{%&lt;/span> &lt;span style="color:#66d9ef">label&lt;/span> default @velit &lt;span style="color:#75715e">%}&lt;/span>~~ &amp;lt;mark&amp;gt;esse&amp;lt;/mark&amp;gt; cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Lorem {% label @ipsum %} {% label primary@dolor sit %} amet, consectetur {% label success@adipiscing elit, %} sed {% label info@do eiusmod %} tempor incididunt ut labore et dolore magna aliqua.&lt;/p></description></item><item><title>没有H1-6标题头和评论的文章</title><link>http://localhost:4321/demo/no-header-title.html</link><pubDate>Thu, 06 Oct 2022 09:02:26 +0800</pubDate><guid>http://localhost:4321/demo/no-header-title.html</guid><description>&lt;p>刘慈欣2018克拉克奖获奖感言（部分内容节选）。&lt;/p>
 &lt;blockquote>
 &lt;p>用于测试在没有H1-6标题头时，文章的目录导航是否会直接关闭，并关闭评论功能。&lt;/p>
-&lt;/blockquote></description></item><item><title>Mermaid支持流程图</title><link>//localhost:4321/demo/mermaid-charts.html</link><pubDate>Sun, 18 Sep 2022 20:58:13 +0800</pubDate><guid>//localhost:4321/demo/mermaid-charts.html</guid><description>&lt;p>本主题已支持 &lt;code>Mermaid&lt;/code> 实现以纯文本的方式绘制流程图、序列图、甘特图、状态图、关系图行等等，随着 &lt;code>Mermaid&lt;/code> 也在逐步发展，后续还会有各种各样的图被引入进来，更多的类型及使用方式可关注其官方网站：
+&lt;/blockquote></description></item><item><title>Mermaid</title><link>http://localhost:4321/post/mermaid/</link><pubDate>Sun, 18 Sep 2022 21:58:13 +0800</pubDate><guid>http://localhost:4321/post/mermaid/</guid><description>&lt;h3 id="settings">Settings
+&lt;a class="header-anchor" href="#settings">&lt;/a>
+&lt;/h3>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># Mermaid tag&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">mermaid&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">enable&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># Available themes: default | dark | forest | neutral&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">theme&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">light&lt;/span>: &lt;span style="color:#ae81ff">default&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">dark&lt;/span>: &lt;span style="color:#ae81ff">dark&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">highlight&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">exclude_languages&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ae81ff">mermaid&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="usage">Usage
+&lt;a class="header-anchor" href="#usage">&lt;/a>
+&lt;/h3>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-jinja" data-lang="jinja">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">{%&lt;/span> &lt;span style="color:#66d9ef">mermaid&lt;/span> type &lt;span style="color:#75715e">%}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">{%&lt;/span> &lt;span style="color:#66d9ef">endmermaid&lt;/span> &lt;span style="color:#75715e">%}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>or&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-markdown" data-lang="markdown">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">```mermaid
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">&lt;/span>type
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">```&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;code>type&lt;/code> : type of the mermaid chart, visit 
+&lt;a href="https://github.com/mermaid-js/mermaid" title="https://github.com/mermaid-js/mermaid" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ https://github.com/mermaid-js/mermaid
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> for more information.&lt;/li>
+&lt;/ul>
+&lt;h3 id="examples">Examples
+&lt;a class="header-anchor" href="#examples">&lt;/a>
+&lt;/h3>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-jinja" data-lang="jinja">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">{%&lt;/span> &lt;span style="color:#66d9ef">mermaid&lt;/span> graph TD &lt;span style="color:#75715e">%}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>A[Hard] --&amp;gt;|Text| B(Round)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>B --&amp;gt; C{Decision}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>C --&amp;gt;|One| D[Result 1]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>C --&amp;gt;|Two| E[Result 2]
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">{%&lt;/span> &lt;span style="color:#66d9ef">endmermaid&lt;/span> &lt;span style="color:#75715e">%}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>or&lt;/p></description></item><item><title>Mermaid支持流程图</title><link>http://localhost:4321/demo/mermaid-charts.html</link><pubDate>Sun, 18 Sep 2022 20:58:13 +0800</pubDate><guid>http://localhost:4321/demo/mermaid-charts.html</guid><description>&lt;p>本主题已支持 &lt;code>Mermaid&lt;/code> 实现以纯文本的方式绘制流程图、序列图、甘特图、状态图、关系图行等等，随着 &lt;code>Mermaid&lt;/code> 也在逐步发展，后续还会有各种各样的图被引入进来，更多的类型及使用方式可关注其官方网站：
 &lt;a href="https://mermaid-js.github.io/" title="https://mermaid-js.github.io/" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
  https://mermaid-js.github.io/
  
  &lt;i class="fa fa-external-link-alt">&lt;/i>
  
-&lt;/a>。&lt;/p></description></item><item><title>数学公式渲染</title><link>//localhost:4321/demo/math-formula.html</link><pubDate>Sun, 11 Sep 2022 10:16:02 +0800</pubDate><guid>//localhost:4321/demo/math-formula.html</guid><description>&lt;p>本主题支持 &lt;code>mathjax&lt;/code> 和 &lt;code>katex&lt;/code> 两种不的方案支持数学公式的渲染，可根据自已的需求进行选择。&lt;/p></description></item><item><title>支持用户自定义设计</title><link>//localhost:4321/demo/custom-files.html</link><pubDate>Sat, 10 Sep 2022 21:02:32 +0800</pubDate><guid>//localhost:4321/demo/custom-files.html</guid><description>&lt;p>对于熟悉前端开发的用户来说，可以通过自定义文件配置，实现对站点的样式和布局进行个性化的调整。其中布局方面主要是支持左侧边栏的站点概览部分，以及站点底部2个位置，但样式的重置可以是整个站点的任意位置。&lt;/p></description></item><item><title>自定义短语示例</title><link>//localhost:4321/demo/shortcodes.html</link><pubDate>Sat, 06 Aug 2022 14:41:50 +0800</pubDate><guid>//localhost:4321/demo/shortcodes.html</guid><description>&lt;p>虽然 &lt;code>Markdown&lt;/code> 语法已经非常丰富能够满足我们写文章的绝大部分需求，但是为更好的对文章内容进行更友好的排版，为引设计一套自定义的短语，便于在使用时能够快速引用。&lt;/p></description></item><item><title>关于 Hugo NexT 组织</title><link>//localhost:4321/about.html</link><pubDate>Thu, 09 Jun 2022 20:12:52 +0800</pubDate><guid>//localhost:4321/about.html</guid><description>&lt;p>&lt;code>Hugo NexT&lt;/code> 组织是由众多喜爱 &lt;code>NexT&lt;/code> 主题及风格的世界各地友人共同组建而成，为的就是让这个主题继续在 &lt;code>Hugo&lt;/code> 引擎中也能得到发扬光大，在此也欢迎你的加入！&lt;/p>
+&lt;/a>。&lt;/p></description></item><item><title>数学公式渲染</title><link>http://localhost:4321/demo/math-formula.html</link><pubDate>Sun, 11 Sep 2022 10:16:02 +0800</pubDate><guid>http://localhost:4321/demo/math-formula.html</guid><description>&lt;p>本主题支持 &lt;code>mathjax&lt;/code> 和 &lt;code>katex&lt;/code> 两种不的方案支持数学公式的渲染，可根据自已的需求进行选择。&lt;/p></description></item><item><title>支持用户自定义设计</title><link>http://localhost:4321/demo/custom-files.html</link><pubDate>Sat, 10 Sep 2022 21:02:32 +0800</pubDate><guid>http://localhost:4321/demo/custom-files.html</guid><description>&lt;p>对于熟悉前端开发的用户来说，可以通过自定义文件配置，实现对站点的样式和布局进行个性化的调整。其中布局方面主要是支持左侧边栏的站点概览部分，以及站点底部2个位置，但样式的重置可以是整个站点的任意位置。&lt;/p></description></item><item><title>自定义短语示例</title><link>http://localhost:4321/demo/shortcodes.html</link><pubDate>Sat, 06 Aug 2022 14:41:50 +0800</pubDate><guid>http://localhost:4321/demo/shortcodes.html</guid><description>&lt;p>虽然 &lt;code>Markdown&lt;/code> 语法已经非常丰富能够满足我们写文章的绝大部分需求，但是为更好的对文章内容进行更友好的排版，为引设计一套自定义的短语，便于在使用时能够快速引用。&lt;/p></description></item><item><title>关于 Hugo NexT 组织</title><link>http://localhost:4321/about.html</link><pubDate>Thu, 09 Jun 2022 20:12:52 +0800</pubDate><guid>http://localhost:4321/about.html</guid><description>&lt;p>&lt;code>Hugo NexT&lt;/code> 组织是由众多喜爱 &lt;code>NexT&lt;/code> 主题及风格的世界各地友人共同组建而成，为的就是让这个主题继续在 &lt;code>Hugo&lt;/code> 引擎中也能得到发扬光大，在此也欢迎你的加入！&lt;/p>
 &lt;h1 id="我们的愿景">我们的愿景
 &lt;a class="header-anchor" href="#%e6%88%91%e4%bb%ac%e7%9a%84%e6%84%bf%e6%99%af">&lt;/a>
-&lt;/h1>&lt;p>延续 &lt;code>NexT&lt;/code> 经典的黑白调搭配，保持简单的易用性及强大的功能。&lt;/p></description></item><item><title>文章目录导航</title><link>//localhost:4321/demo/table-of-content.html</link><pubDate>Wed, 08 Jun 2022 21:12:52 +0800</pubDate><guid>//localhost:4321/demo/table-of-content.html</guid><description>&lt;p>巴顿将军说过：“衡量一个人是否成功，不是看他站到顶峰，而是从顶峰跌落之后的反弹力”，褚时健的人生便是如此，中年发家致富，名利双收，之后又跌落到谷底，等到74岁再创业，10年后带着褚橙归来，东山再起收获亿万财富，他的发展轨迹就是反弹的过程。&lt;/p></description></item><item><title>Hugo 内置的 Chroma 语法高亮</title><link>//localhost:4321/demo/syntax-highlighting.html</link><pubDate>Tue, 07 Jun 2022 19:09:52 +0800</pubDate><guid>//localhost:4321/demo/syntax-highlighting.html</guid><description>&lt;p>Hugo 通过 Chroma 提供非常快速的语法高亮显示，现 Hugo 中使用 Chroma 作为代码块高亮支持，它内置在 Go 语言当中，速度是真的非常、非常快，而且最为重要的是它也兼容之前我们使用的 Pygments 方式。&lt;/p>
+&lt;/h1>&lt;p>延续 &lt;code>NexT&lt;/code> 经典的黑白调搭配，保持简单的易用性及强大的功能。&lt;/p></description></item><item><title>文章目录导航</title><link>http://localhost:4321/demo/table-of-content.html</link><pubDate>Wed, 08 Jun 2022 21:12:52 +0800</pubDate><guid>http://localhost:4321/demo/table-of-content.html</guid><description>&lt;p>巴顿将军说过：“衡量一个人是否成功，不是看他站到顶峰，而是从顶峰跌落之后的反弹力”，褚时健的人生便是如此，中年发家致富，名利双收，之后又跌落到谷底，等到74岁再创业，10年后带着褚橙归来，东山再起收获亿万财富，他的发展轨迹就是反弹的过程。&lt;/p></description></item><item><title>Hugo 内置的 Chroma 语法高亮</title><link>http://localhost:4321/demo/syntax-highlighting.html</link><pubDate>Tue, 07 Jun 2022 19:09:52 +0800</pubDate><guid>http://localhost:4321/demo/syntax-highlighting.html</guid><description>&lt;p>Hugo 通过 Chroma 提供非常快速的语法高亮显示，现 Hugo 中使用 Chroma 作为代码块高亮支持，它内置在 Go 语言当中，速度是真的非常、非常快，而且最为重要的是它也兼容之前我们使用的 Pygments 方式。&lt;/p>
 &lt;p>以下通过 Hugo 内置短代码 &lt;code>highlight&lt;/code> 和 &lt;code>Markdown&lt;/code> 代码块方式分别验证不同语言的代码块渲染效果并能正确高亮显示，有关优化语法突出显示的更多信息，请参阅 
 &lt;a href="https://gohugo.io/getting-started/configuration-markup#highlight" title="Hugo 文档" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
  Hugo 文档
  
  &lt;i class="fa fa-external-link-alt">&lt;/i>
  
-&lt;/a>。&lt;/p></description></item><item><title>支持 Emoji 表情</title><link>//localhost:4321/demo/emoji-support.html</link><pubDate>Sat, 04 Jun 2022 19:46:45 +0800</pubDate><guid>//localhost:4321/demo/emoji-support.html</guid><description>&lt;p>Emoji 可以通过多种方式在 Hugo 项目中启用。&lt;/p>
+&lt;/a>。&lt;/p></description></item><item><title>支持 Emoji 表情</title><link>http://localhost:4321/demo/emoji-support.html</link><pubDate>Sat, 04 Jun 2022 19:46:45 +0800</pubDate><guid>http://localhost:4321/demo/emoji-support.html</guid><description>&lt;p>Emoji 可以通过多种方式在 Hugo 项目中启用。&lt;/p>
 &lt;p>
 &lt;a href="https://gohugo.io/functions/emojify/" title="emojify" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
  &lt;code>emojify&lt;/code>
@@ -48,7 +102,7 @@
  &lt;i class="fa fa-external-link-alt">&lt;/i>
  
 &lt;/a>中设置 &lt;code>enableEmoji&lt;/code> 为 &lt;code>true&lt;/code>，
-然后你就可以直接在文章中输入 emoji 的代码。&lt;/p></description></item><item><title>Markdown 语法支持</title><link>//localhost:4321/demo/markdown-syntax.html</link><pubDate>Fri, 03 Jun 2022 11:52:18 +0800</pubDate><guid>//localhost:4321/demo/markdown-syntax.html</guid><description>&lt;p>仅以此篇文章来测试下在 &lt;code>NexT&lt;/code> 主题中在通过 &lt;code>Hugo&lt;/code> 引擎来建站时，是否支持 &lt;code>Markdown&lt;/code> 文件内容中所写的各种语法，并展示下实际的效果。&lt;/p></description></item><item><title>欢迎加入 Hugo NexT 组织！</title><link>//localhost:4321/post/external-link/</link><pubDate>Wed, 01 Jun 2022 15:59:41 +0800</pubDate><guid>//localhost:4321/post/external-link/</guid><description>&lt;p>欢迎来到 &lt;code>Hugo NexT&lt;/code> 文档站点！ 它是从 
+然后你就可以直接在文章中输入 emoji 的代码。&lt;/p></description></item><item><title>Markdown 语法支持</title><link>http://localhost:4321/demo/markdown-syntax.html</link><pubDate>Fri, 03 Jun 2022 11:52:18 +0800</pubDate><guid>http://localhost:4321/demo/markdown-syntax.html</guid><description>&lt;p>仅以此篇文章来测试下在 &lt;code>NexT&lt;/code> 主题中在通过 &lt;code>Hugo&lt;/code> 引擎来建站时，是否支持 &lt;code>Markdown&lt;/code> 文件内容中所写的各种语法，并展示下实际的效果。&lt;/p></description></item><item><title>欢迎加入 Hugo NexT 组织！</title><link>http://localhost:4321/post/external-link/</link><pubDate>Wed, 01 Jun 2022 15:59:41 +0800</pubDate><guid>http://localhost:4321/post/external-link/</guid><description>&lt;p>欢迎来到 &lt;code>Hugo NexT&lt;/code> 文档站点！ 它是从 
 &lt;a href="https://theme-next.js.org/" title="Theme NexT" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
  Theme NexT
  
@@ -63,7 +117,7 @@
 &lt;/a>打造的高品质优雅主题，保持简单易用的特性和强大的功能。&lt;/p>
 &lt;h2 id="用户指南">用户指南
 &lt;a class="header-anchor" href="#%e7%94%a8%e6%88%b7%e6%8c%87%e5%8d%97">&lt;/a>
-&lt;/h2>&lt;p>设置 NexT 主题很容易。只需遵循文档，就可快速创建您的个人网站！&lt;/p></description></item><item><title>Hello R Markdown</title><link>//localhost:4321/post/2020-12-01-r-rmarkdown/</link><pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate><guid>//localhost:4321/post/2020-12-01-r-rmarkdown/</guid><description>&lt;div id="r-markdown" class="section level1">
+&lt;/h2>&lt;p>设置 NexT 主题很容易。只需遵循文档，就可快速创建您的个人网站！&lt;/p></description></item><item><title>Hello R Markdown</title><link>http://localhost:4321/post/2020-12-01-r-rmarkdown/</link><pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate><guid>http://localhost:4321/post/2020-12-01-r-rmarkdown/</guid><description>&lt;div id="r-markdown" class="section level1">
 &lt;h1>R Markdown&lt;/h1>
 &lt;p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com&lt;/a>.&lt;/p>
 &lt;p>You can embed an R code chunk like this:&lt;/p>
@@ -87,7 +141,7 @@ fit
 &lt;/div>
 &lt;div id="including-plots" class="section level1">
 &lt;h1>Including Plots&lt;/h1>
-&lt;p>You can also embed plots. See Figure &lt;a href="#fig:pie">1&lt;/a> for example:&lt;/p></description></item><item><title>A Plain Markdown Post</title><link>//localhost:4321/post/2016-12-30-hello-markdown/</link><pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate><guid>//localhost:4321/post/2016-12-30-hello-markdown/</guid><description>&lt;p>This is a post written in plain Markdown (&lt;code>*.md&lt;/code>) instead of R Markdown (&lt;code>*.Rmd&lt;/code>). The major differences are:&lt;/p>
+&lt;p>You can also embed plots. See Figure &lt;a href="#fig:pie">1&lt;/a> for example:&lt;/p></description></item><item><title>A Plain Markdown Post</title><link>http://localhost:4321/post/2016-12-30-hello-markdown/</link><pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate><guid>http://localhost:4321/post/2016-12-30-hello-markdown/</guid><description>&lt;p>This is a post written in plain Markdown (&lt;code>*.md&lt;/code>) instead of R Markdown (&lt;code>*.Rmd&lt;/code>). The major differences are:&lt;/p>
 &lt;ol>
 &lt;li>You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (&lt;code>```{r}&lt;/code>);&lt;/li>
 &lt;li>A plain Markdown post is rendered through 
@@ -110,7 +164,200 @@ fit
  
 &lt;/a>.&lt;/li>
 &lt;/ol>
-&lt;p>There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown. For example, you can write a task list with Blackfriday but not with Pandoc:&lt;/p></description></item><item><title>Lorem Ipsum</title><link>//localhost:4321/post/2015-01-01-lorem-ipsum/</link><pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate><guid>//localhost:4321/post/2015-01-01-lorem-ipsum/</guid><description>&lt;p>&lt;strong>Lorem ipsum&lt;/strong> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore &lt;em>magna aliqua&lt;/em>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p></description></item><item><title>站点示例</title><link>//localhost:4321/flinks.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>//localhost:4321/flinks.html</guid><description>&lt;p>如想交换本站友情链接，请在评论区留下你的站点信息，格式参考如下：&lt;/p>
+&lt;p>There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown. For example, you can write a task list with Blackfriday but not with Pandoc:&lt;/p></description></item><item><title>Lorem Ipsum</title><link>http://localhost:4321/post/2015-01-01-lorem-ipsum/</link><pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate><guid>http://localhost:4321/post/2015-01-01-lorem-ipsum/</guid><description>&lt;p>&lt;strong>Lorem ipsum&lt;/strong> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore &lt;em>magna aliqua&lt;/em>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p></description></item><item><title/><link>http://localhost:4321/post/code-highlight/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:4321/post/code-highlight/</guid><description>&lt;h2 id="toc-true">title: &amp;ldquo;Code Highlight&amp;rdquo;
+date: &amp;ldquo;2014-03-15 20:17:16&amp;rdquo;
+tags: highlight
+categories: Demo
+description: &amp;ldquo;A collection of Hello World applications from helloworld.org.&amp;rdquo;
+toc: true
+&lt;a class="header-anchor" href="#toc-true">&lt;/a>
+&lt;/h2>&lt;h2 id="c">C
+&lt;a class="header-anchor" href="#c">&lt;/a>
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-c" data-lang="c">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// C
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;stdio.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>(&lt;span style="color:#66d9ef">void&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">printf&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;Hello World&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="c-1">C++
+&lt;a class="header-anchor" href="#c-1">&lt;/a>
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-c++" data-lang="c++">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// C++
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;iostream.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>(&lt;span style="color:#66d9ef">void&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cout &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;Hello World&amp;#34;&lt;/span> &lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span> endl;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;!-- more -->
+&lt;h2 id="java">JAVA
+&lt;a class="header-anchor" href="#java">&lt;/a>
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">class&lt;/span> &lt;span style="color:#a6e22e">helloWorld&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">static&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>(String args&lt;span style="color:#f92672">[]&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> System.&lt;span style="color:#a6e22e">out&lt;/span>.&lt;span style="color:#a6e22e">println&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;Hello World&amp;#34;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="assembler">Assembler
+&lt;a class="header-anchor" href="#assembler">&lt;/a>
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-c" data-lang="c">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span> &lt;span style="color:#75715e">&amp;lt;stdio.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">char&lt;/span> format[] &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;%s %s&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">char&lt;/span> hello[] &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;Hello&amp;#34;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">char&lt;/span> world[] &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;world&amp;#34;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">void&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>( &lt;span style="color:#66d9ef">void&lt;/span> )
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">__asm&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> mov eax, offset world
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> push eax
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> mov eax, offset hello
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> push eax
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> mov eax, offset format
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> push eax
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> call printf
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> pop ebx
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> pop ebx
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> pop ebx
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="net">.Net
+&lt;a class="header-anchor" href="#net">&lt;/a>
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-cs" data-lang="cs">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// Hello World .NET&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">#&lt;/span>&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#960050;background-color:#1e0010">&amp;lt;&lt;/span>mscorlib.dll&amp;gt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">using&lt;/span> namespace System;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> _tmain()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Console::WriteLine(S&lt;span style="color:#e6db74">&amp;#34;Hello World&amp;#34;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="erlang">Erlang
+&lt;a class="header-anchor" href="#erlang">&lt;/a>
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-erlang" data-lang="erlang">&lt;span style="display:flex;">&lt;span>-module(hello).
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>-export([world&lt;span style="color:#f92672">/&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span>]).
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">world&lt;/span>() &lt;span style="color:#f92672">-&amp;gt;&lt;/span> io:&lt;span style="color:#a6e22e">format&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;Hello World&amp;#34;&lt;/span>).
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="ruby">Ruby
+&lt;a class="header-anchor" href="#ruby">&lt;/a>
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-ruby" data-lang="ruby">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#!/usr/local/bin/ruby -w&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>puts &lt;span style="color:#e6db74">&amp;#34;Hello World&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="basic">BASIC
+&lt;a class="header-anchor" href="#basic">&lt;/a>
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-basic" data-lang="basic">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">//&lt;/span> Texas Instruments TI&lt;span style="color:#ae81ff">-81&lt;/span> BASIC
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Prgm1:HELLO&lt;span style="color:#f92672">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">:&lt;/span>Disp &lt;span style="color:#e6db74">&amp;#34;HELLO WORLD&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="perl">Perl
+&lt;a class="header-anchor" href="#perl">&lt;/a>
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-perl" data-lang="perl">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#!/usr/bin perl -w &lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">print&lt;/span> (&lt;span style="color:#e6db74">&amp;#34;Hello World&amp;#34;&lt;/span>); 
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="python">Python
+&lt;a class="header-anchor" href="#python">&lt;/a>
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#!/bin/python&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>print(&lt;span style="color:#e6db74">&amp;#34;Hello World&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="bash">Bash
+&lt;a class="header-anchor" href="#bash">&lt;/a>
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#!/bin/bash
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>echo &lt;span style="color:#e6db74">&amp;#34;Hello World&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="brainfuck">Brainfuck
+&lt;a class="header-anchor" href="#brainfuck">&lt;/a>
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-brainfuck" data-lang="brainfuck">&lt;span style="display:flex;">&lt;span>&amp;gt;+++++++++&lt;span style="color:#66d9ef">[&lt;/span>&amp;lt;++++++++&amp;gt;-&lt;span style="color:#66d9ef">]&lt;/span>&amp;lt;&lt;span style="color:#f92672">.&lt;/span>&amp;gt;+++++++&lt;span style="color:#66d9ef">[&lt;/span>&amp;lt;++++&amp;gt;-&lt;span style="color:#66d9ef">]&lt;/span>&amp;lt;+&lt;span style="color:#f92672">.&lt;/span>+++++++&lt;span style="color:#f92672">..&lt;/span>+++&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#66d9ef">[&lt;/span>-&lt;span style="color:#66d9ef">]&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&amp;gt;++++++++&lt;span style="color:#66d9ef">[&lt;/span>&amp;lt;++++&amp;gt;-&lt;span style="color:#66d9ef">]&lt;/span>&lt;span style="color:#75715e"> &lt;/span>&amp;lt;&lt;span style="color:#f92672">.&lt;/span>&amp;gt;+++++++++++&lt;span style="color:#66d9ef">[&lt;/span>&amp;lt;++++++++&amp;gt;-&lt;span style="color:#66d9ef">]&lt;/span>&amp;lt;-&lt;span style="color:#f92672">.&lt;/span>--------&lt;span style="color:#f92672">.&lt;/span>+++&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#f92672">.&lt;/span>------&lt;span style="color:#f92672">.&lt;/span>--------&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#66d9ef">[&lt;/span>-&lt;span style="color:#66d9ef">]&lt;/span>&amp;gt;++++++++&lt;span style="color:#66d9ef">[&lt;/span>&amp;lt;++++&amp;gt;-&lt;span style="color:#75715e"> &lt;/span>&lt;span style="color:#66d9ef">]&lt;/span>&amp;lt;+&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#66d9ef">[&lt;/span>-&lt;span style="color:#66d9ef">]&lt;/span>++++++++++&lt;span style="color:#f92672">.&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="php">php
+&lt;a class="header-anchor" href="#php">&lt;/a>
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-php" data-lang="php">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">&amp;lt;?=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Hello world&lt;/span>&lt;span style="color:#ae81ff">\n&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &lt;span style="color:#75715e">?&amp;gt;&lt;/span>&lt;span style="color:#960050;background-color:#1e0010"> 
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="pascal">Pascal
+&lt;a class="header-anchor" href="#pascal">&lt;/a>
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>Program HelloWorld;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Begin
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Writeln (&amp;#39;Hello World!&amp;#39;);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>End.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="delphi">Delphi
+&lt;a class="header-anchor" href="#delphi">&lt;/a>
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">//&lt;/span> Delphi, thanks to C0derr
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>program Project1;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>uses
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> qdialogs;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">const&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> s&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#39;Hello, World!&amp;#39;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>begin
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> showmessage(s);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>end&lt;span style="color:#f92672">.&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title/><link>http://localhost:4321/post/qna/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:4321/post/qna/</guid><description>&lt;h2 id="feature-hexo-theme-freemind-blogimagesqnaqnajpg">title: &amp;ldquo;Questions and Answers&amp;rdquo;
+date: &amp;ldquo;2014-03-16 18:17:16&amp;rdquo;
+tags: Q&amp;amp;A
+categories: Docs
+description: &amp;ldquo;Frequently asked questions and my answers.&amp;rdquo;
+feature: /hexo-theme-freemind-blog/images/qna/qna.jpg
+&lt;a class="header-anchor" href="#feature-hexo-theme-freemind-blogimagesqnaqnajpg">&lt;/a>
+&lt;/h2>&lt;p>{% label Q danger %} What does &lt;code>Freemind&lt;/code> stands for?&lt;/p>
+&lt;p>{% label A success %} &lt;code>Freemind&lt;/code> is named after 
+&lt;a href="http://freemind.pluskid.org/" title="Pluskid&amp;rsquo;s blog" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ Pluskid&amp;rsquo;s blog
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a>. This theme is greatly inspired by his blog layouts and stylesheets.&lt;/p>
+&lt;p>{% label Q danger %} There&amp;rsquo;re already so many themes for Hexo. Why create this one?&lt;/p></description></item><item><title/><link>http://localhost:4321/post/tag-plugins/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:4321/post/tag-plugins/</guid><description>&lt;h2 id="toc-true">title: &amp;ldquo;Tag Plugins&amp;rdquo;
+date: &amp;ldquo;2014-03-16 10:17:16&amp;rdquo;
+tags: plugins
+categories: Docs
+description: &amp;ldquo;Introduce tag plugins in freemind.&amp;rdquo;
+feature: /hexo-theme-freemind-blog/images/tag-plugins/plugins.jpg
+toc: true
+&lt;a class="header-anchor" href="#toc-true">&lt;/a>
+&lt;/h2>&lt;p>The freemind theme offers several new tag plugins, so as to fully take advantages of Bootstrap.&lt;/p>
+&lt;p>To use these tag plugins, you need to install 
+&lt;a href="https://github.com/wzpan/hexo-tag-bootstrap" title="hexo-tag-bootstrap" rel="noopener external nofollow noreferrer" target="_blank" class=" exturl">
+ hexo-tag-bootstrap
+ 
+ &lt;i class="fa fa-external-link-alt">&lt;/i>
+ 
+&lt;/a> first. In your blog root folder, execute the following command:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>$ npm install hexo-tag-bootstrap --save
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then you can use these tag plugins in your blog, as easily as you normally do using hexo tag plugins.&lt;/p></description></item><item><title>Button</title><link>http://localhost:4321/post/button/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:4321/post/button/</guid><description>&lt;h3 id="usage">Usage
+&lt;a class="header-anchor" href="#usage">&lt;/a>
+&lt;/h3>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-jinja" data-lang="jinja">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">{%&lt;/span> &lt;span style="color:#66d9ef">button&lt;/span> url&lt;span style="color:#f92672">,&lt;/span> text&lt;span style="color:#f92672">,&lt;/span> icon &lt;span style="color:#f92672">[&lt;/span>class&lt;span style="color:#f92672">],&lt;/span> &lt;span style="color:#f92672">[&lt;/span>title&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#75715e">%}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>or&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-jinja" data-lang="jinja">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">{%&lt;/span> &lt;span style="color:#66d9ef">btn&lt;/span> url&lt;span style="color:#f92672">,&lt;/span> text&lt;span style="color:#f92672">,&lt;/span> icon &lt;span style="color:#f92672">[&lt;/span>class&lt;span style="color:#f92672">],&lt;/span> &lt;span style="color:#f92672">[&lt;/span>title&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#75715e">%}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;code>url&lt;/code> : Absolute or relative path to URL.&lt;/li>
+&lt;li>&lt;code>text&lt;/code> : Button text. Required if no icon specified.&lt;/li>
+&lt;li>&lt;code>icon&lt;/code> : Font Awesome icon name. Required if no text specified.&lt;/li>
+&lt;li>&lt;code>[class]&lt;/code> : &lt;em>Optional parameter.&lt;/em> Font Awesome class(es): &lt;code>fa-fw&lt;/code> | &lt;code>fa-lg&lt;/code> | &lt;code>fa-2x&lt;/code> | &lt;code>fa-3x&lt;/code> | &lt;code>fa-4x&lt;/code> | &lt;code>fa-5x&lt;/code>&lt;/li>
+&lt;li>&lt;code>[title]&lt;/code> : &lt;em>Optional parameter.&lt;/em> Tooltip at mouseover.&lt;/li>
+&lt;/ul>
+&lt;h3 id="examples">Examples
+&lt;a class="header-anchor" href="#examples">&lt;/a>
+&lt;/h3>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-jinja" data-lang="jinja">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">{%&lt;/span> &lt;span style="color:#66d9ef">button&lt;/span> #&lt;span style="color:#f92672">,&lt;/span> Text &lt;span style="color:#75715e">%}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>{% button #, Text %}&lt;/p></description></item><item><title>Note (Bootstrap Callout)</title><link>http://localhost:4321/post/note/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:4321/post/note/</guid><description>&lt;h1 id="settings">Settings
+&lt;a class="header-anchor" href="#settings">&lt;/a>
+&lt;/h1>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">note&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># Note tag style values:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># - simple bs-callout old alert style. Default.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># - modern bs-callout new (v2-v3) alert style.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># - flat flat callout style with background, like on Mozilla or StackOverflow.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># - disabled disable all CSS styles import of note tag.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">style&lt;/span>: &lt;span style="color:#ae81ff">simple&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">icons&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e"># Offset also applied to label tag variables. This option can work with disabled note tag.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">light_bg_offset&lt;/span>: &lt;span style="color:#ae81ff">0&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="usage">Usage
+&lt;a class="header-anchor" href="#usage">&lt;/a>
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-jinja" data-lang="jinja">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">{%&lt;/span> &lt;span style="color:#66d9ef">note&lt;/span> &lt;span style="color:#f92672">[&lt;/span>class&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">[&lt;/span>no-icon&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">[&lt;/span>summary&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#75715e">%}&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Any content (support inline tags too).
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">{%&lt;/span> &lt;span style="color:#66d9ef">endnote&lt;/span> &lt;span style="color:#75715e">%}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;code>[class]&lt;/code> : &lt;em>Optional parameter.&lt;/em> Supported values: default | primary | success | info | warning | danger.&lt;/li>
+&lt;li>&lt;code>[no-icon]&lt;/code> : &lt;em>Optional parameter.&lt;/em> Disable icon in note.&lt;/li>
+&lt;li>&lt;code>[summary]&lt;/code> : &lt;em>Optional parameter.&lt;/em> Optional summary of the note.&lt;/li>
+&lt;/ul>
+&lt;p>All parameters are optional.&lt;/p></description></item><item><title>站点示例</title><link>http://localhost:4321/flinks.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://localhost:4321/flinks.html</guid><description>&lt;p>如想交换本站友情链接，请在评论区留下你的站点信息，格式参考如下：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>- &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">Hugo-NexT&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">desc&lt;/span>: &lt;span style="color:#ae81ff">Hugo NexT 官方预览网站。&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">avatar&lt;/span>: &lt;span style="color:#ae81ff">https://hugo-next.eu.org/imgs/hugo_next_avatar.png&lt;/span>
