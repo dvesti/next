@@ -12,7 +12,7 @@
 
 # 站点域名，比如： https://hugo-next.eu.org
 # Website domain, eg: https://hugo-next.eu.org
-baseURL: "/"
+baseURL: https://ku4a.netlify.app/
 # 站点标题
 # Website title
 title: "Hugo NexT"
@@ -34,7 +34,9 @@ pagination:
 # Enable Emoji support
 enableEmoji: true
 # 让 Makedown 文档支持 HTML 语法，高亮，文章目录等功能
-# Make markdown content support HTML syntax, highlight, toc etc.
+# Make markdown content support HTML syntax, highlight, toc etc
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+
 markup:
   goldmark:
     renderer:
@@ -104,7 +106,7 @@ enableRobotsTXT: true
 # 强制输出时压缩文件
 # Compress all files when output
 minify:
-  minifyOutput: true
+  minifyOutput: false #true
 
 #--------------------------------------
 # 菜单配置说明
