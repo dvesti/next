@@ -15,14 +15,14 @@
 baseURL: https://ku4a.netlify.app/
 # 站点标题
 # Website title
-title: "Hugo NexT"
+title: Hugo NexT
 # 主题名称
 # Theme name
-theme: "hugo-theme-next"
+theme: hugo-theme-next
 # 站点默认的语言和代码
 # Default laguage & code for website
-defaultContentLanguage: "ru" #zh-cn
-languageCode: "ru-RU" #zh-CN
+defaultContentLanguage: ru #zh-cn
+languageCode: ru-RU #zh-CN
 # 是否包含中文，日语，韩文
 # Whether contains Chinese, Japanese and Korean
 hasCJKLanguage: true
@@ -106,7 +106,7 @@ enableRobotsTXT: true
 # 强制输出时压缩文件
 # Compress all files when output
 minify:
-  minifyOutput: false #true
+  minifyOutput: true
 
 #--------------------------------------
 # 菜单配置说明
